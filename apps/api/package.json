@@ -1,0 +1,25 @@
+{
+  "name": "@wageproof/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "seed": "tsx src/seed.ts",
+    "test": "tsx --test test/flow.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@fastify/formbody": "^8.0.2",
+    "@wageproof/ledger-core": "*",
+    "fastify": "^5.2.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": ">=22",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
